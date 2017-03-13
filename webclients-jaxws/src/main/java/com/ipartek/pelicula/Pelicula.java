@@ -20,7 +20,7 @@ import javax.xml.datatype.XMLGregorianCalendar;
  *       &lt;sequence>
  *         &lt;element name="codigo" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *         &lt;element name="festreno" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
- *         &lt;element name="genero" type="{http://pelicula.ws.formacion.ipartek.com/}genero" minOccurs="0"/>
+ *         &lt;element name="genero" type="{http://com.ipartek.formacion/types}genero" minOccurs="0"/>
  *         &lt;element name="titulo" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>

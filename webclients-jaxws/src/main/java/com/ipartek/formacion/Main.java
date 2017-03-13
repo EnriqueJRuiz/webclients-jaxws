@@ -10,14 +10,14 @@ import javax.xml.ws.handler.MessageContext;
 
 import com.ipartek.pelicula.Pelicula;
 import com.ipartek.pelicula.PeliculaMensaje;
-import com.ipartek.pelicula.PeliculaServiceWSImp;
+import com.ipartek.pelicula.PeliculasServiceWSImp;
 import com.ipartek.pelicula.Peliculasservice;
 
 public class Main {
 
 	public static void main(String[] args) {
 		Peliculasservice cliente = new Peliculasservice();
-		PeliculaServiceWSImp clientesoap = cliente.getPeliculaServiceWSImpPort();
+		PeliculasServiceWSImp clientesoap = cliente.getPeliculasServiceWSImpPort();
 		
 		Map<String, Object> requestContext = ((BindingProvider)clientesoap).getRequestContext();
 		
@@ -26,7 +26,7 @@ public class Main {
 		
 		requestContext.put(MessageContext.HTTP_REQUEST_HEADERS, requestHeaders);
 		
-		PeliculaMensaje respuesta = clientesoap.obtenerporid(1);
+		PeliculaMensaje respuesta = clientesoap.obtenerporid(1);//id de la pelicula
 		Pelicula pelicula = respuesta.getPelicula();
 		System.out.println(pelicula.getTitulo());
 		

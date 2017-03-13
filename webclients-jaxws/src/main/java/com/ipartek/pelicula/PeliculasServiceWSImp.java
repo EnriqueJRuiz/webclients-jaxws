@@ -16,25 +16,25 @@ import javax.xml.ws.ResponseWrapper;
  * Generated source version: 2.1
  * 
  */
-@WebService(name = "PeliculaServiceWSImp", targetNamespace = "http://pelicula.ws.formacion.ipartek.com/")
+@WebService(name = "PeliculasServiceWSImp", targetNamespace = "http://com.ipartek.formacion/types")
 @XmlSeeAlso({
     ObjectFactory.class
 })
-public interface PeliculaServiceWSImp {
+public interface PeliculasServiceWSImp {
 
 
     /**
      * 
-     * @param arg0
+     * @param codigo
      * @return
      *     returns com.ipartek.pelicula.PeliculaMensaje
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "obtenerporid", targetNamespace = "http://pelicula.ws.formacion.ipartek.com/", className = "com.ipartek.pelicula.Obtenerporid")
-    @ResponseWrapper(localName = "obtenerporidResponse", targetNamespace = "http://pelicula.ws.formacion.ipartek.com/", className = "com.ipartek.pelicula.ObtenerporidResponse")
+    @RequestWrapper(localName = "obtenerporid", targetNamespace = "http://com.ipartek.formacion/types", className = "com.ipartek.pelicula.Obtenerporid")
+    @ResponseWrapper(localName = "obtenerporidResponse", targetNamespace = "http://com.ipartek.formacion/types", className = "com.ipartek.pelicula.ObtenerporidResponse")
     public PeliculaMensaje obtenerporid(
-        @WebParam(name = "arg0", targetNamespace = "")
-        int arg0);
+        @WebParam(name = "codigo", targetNamespace = "")
+        int codigo);
 
 }

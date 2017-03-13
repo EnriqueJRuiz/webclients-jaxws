@@ -16,7 +16,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="arg0" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="codigo" type="{http://www.w3.org/2001/XMLSchema}int"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -27,26 +27,26 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "obtenerporid", propOrder = {
-    "arg0"
+    "codigo"
 })
 public class Obtenerporid {
 
-    protected int arg0;
+    protected int codigo;
 
     /**
-     * Gets the value of the arg0 property.
+     * Gets the value of the codigo property.
      * 
      */
-    public int getArg0() {
-        return arg0;
+    public int getCodigo() {
+        return codigo;
     }
 
     /**
-     * Sets the value of the arg0 property.
+     * Sets the value of the codigo property.
      * 
      */
-    public void setArg0(int value) {
-        this.arg0 = value;
+    public void setCodigo(int value) {
+        this.codigo = value;
     }
 
 }

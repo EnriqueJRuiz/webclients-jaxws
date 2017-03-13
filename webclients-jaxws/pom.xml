@@ -48,7 +48,7 @@
                         <!-- using wsdl from an url -->
                         <wsdlUrls>
                             <wsdlUrl>
-                               http://192.168.0.4:8080/webservices-jaxws/peliculaws?wsdl
+                               http://localhost:8080/webservices-jaxws/peliculasws?wsdl
                             </wsdlUrl>
                         </wsdlUrls>
                             <!-- Keep generated files -->
